@@ -61,6 +61,7 @@ body {
   border: 0.5px solid rgba(26, 24, 20, 0.12);
   padding: 3rem;
   max-width: 400px;
+  margin-bottom: 3rem;
 }
 
 .placeholder-label {
@@ -81,4 +82,64 @@ body {
 .placeholder-meta {
   font-size: 0.9rem;
   color: rgba(26, 24, 20, 0.6);
+}
+
+.backend-check {
+  margin-top: 2rem;
+  max-width: 600px;
+}
+
+.check-button {
+  padding: 1rem 2rem;
+  background: #1a1814;
+  color: #f4f1ea;
+  border: 0.5px solid #1a1814;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.check-button:hover:not(:disabled) {
+  background: transparent;
+  color: #1a1814;
+}
+
+.check-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status-card {
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 0.5px solid rgba(26, 24, 20, 0.12);
+  background: white;
+}
+
+.status-card.status-error {
+  border-color: rgba(180, 50, 50, 0.4);
+  background: #fef5f5;
+}
+
+.status-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(26, 24, 20, 0.6);
+  margin-bottom: 1rem;
+}
+
+.status-line {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  word-break: break-all;
+}
+
+.status-line strong {
+  color: #a08552;
+  font-weight: 500;
+  margin-right: 0.5rem;
 }
