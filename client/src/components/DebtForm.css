@@ -77,3 +77,18 @@
   background: transparent;
   color: #1a1814;
 }
+
+/* ─────────────────────────────────────────────
+   Mobile layout — stack form fields
+   ───────────────────────────────────────────── */
+
+@media (max-width: 700px) {
+  .debt-form-card {
+    padding: 1.5rem;
+  }
+
+  .field-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
