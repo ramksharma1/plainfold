@@ -15,6 +15,8 @@ body {
   min-height: 100vh;
 }
 
+/* Header */
+
 .header {
   padding: 1.75rem 3rem;
   border-bottom: 0.5px solid rgba(26, 24, 20, 0.12);
@@ -36,10 +38,16 @@ body {
   border-radius: 50%;
 }
 
+/* Main layout */
+
 .main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 4rem 3rem;
+}
+
+.page-intro {
+  margin-bottom: 3rem;
 }
 
 .title {
@@ -53,18 +61,34 @@ body {
 .subtitle {
   font-size: 1.1rem;
   color: rgba(26, 24, 20, 0.6);
-  margin-bottom: 3rem;
 }
 
-.placeholder-card {
+/* Dashboard grid: total card next to form */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Total card */
+
+.total-card {
   background: white;
   border: 0.5px solid rgba(26, 24, 20, 0.12);
-  padding: 3rem;
-  max-width: 400px;
-  margin-bottom: 3rem;
+  padding: 2.5rem;
+  height: fit-content;
 }
 
-.placeholder-label {
+.total-label {
   font-size: 0.75rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -72,74 +96,21 @@ body {
   margin-bottom: 1rem;
 }
 
-.placeholder-amount {
+.total-amount {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
 }
 
-.placeholder-meta {
+.total-meta {
   font-size: 0.9rem;
   color: rgba(26, 24, 20, 0.6);
 }
 
-.backend-check {
-  margin-top: 2rem;
-  max-width: 600px;
-}
+/* Debt list wrapper */
 
-.check-button {
-  padding: 1rem 2rem;
-  background: #1a1814;
-  color: #f4f1ea;
-  border: 0.5px solid #1a1814;
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.check-button:hover:not(:disabled) {
-  background: transparent;
-  color: #1a1814;
-}
-
-.check-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.status-card {
-  margin-top: 2rem;
-  padding: 2rem;
-  border: 0.5px solid rgba(26, 24, 20, 0.12);
-  background: white;
-}
-
-.status-card.status-error {
-  border-color: rgba(180, 50, 50, 0.4);
-  background: #fef5f5;
-}
-
-.status-label {
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(26, 24, 20, 0.6);
-  margin-bottom: 1rem;
-}
-
-.status-line {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  font-family: 'JetBrains Mono', 'Courier New', monospace;
-  word-break: break-all;
-}
-
-.status-line strong {
-  color: #a08552;
-  font-weight: 500;
-  margin-right: 0.5rem;
+.debt-list-wrapper {
+  width: 100%;
 }

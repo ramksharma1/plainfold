@@ -1,0 +1,134 @@
+.debt-list,
+.debt-list-empty {
+  background: white;
+  border: 0.5px solid rgba(26, 24, 20, 0.12);
+  padding: 2.5rem;
+  width: 100%;
+}
+
+.debt-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.5px solid rgba(26, 24, 20, 0.12);
+}
+
+.debt-list-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.debt-list-count {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(26, 24, 20, 0.5);
+}
+
+.debt-list-rows {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.debt-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 0.5px solid rgba(26, 24, 20, 0.08);
+}
+
+.debt-row:last-child {
+  border-bottom: none;
+}
+
+.debt-row-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.debt-creditor {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  color: #1a1814;
+}
+
+.debt-status {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.tone-ok       { color: #4a7a55; }
+.tone-warn     { color: #b07a33; }
+.tone-bad      { color: #a8413a; }
+.tone-neutral  { color: rgba(26, 24, 20, 0.5); }
+
+.debt-row-numbers {
+  display: flex;
+  gap: 2rem;
+}
+
+.debt-figure {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: right;
+  min-width: 80px;
+}
+
+.debt-figure-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(26, 24, 20, 0.5);
+}
+
+.debt-figure-value {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  color: #1a1814;
+}
+
+.debt-delete {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0.5px solid rgba(26, 24, 20, 0.15);
+  color: rgba(26, 24, 20, 0.4);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.debt-delete:hover {
+  background: #a8413a;
+  color: white;
+  border-color: #a8413a;
+}
+
+.empty-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(26, 24, 20, 0.5);
+  margin-bottom: 1rem;
+}
+
+.empty-message {
+  color: rgba(26, 24, 20, 0.6);
+  font-size: 1rem;
+  line-height: 1.6;
+}

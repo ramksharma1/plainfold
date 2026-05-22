@@ -1,0 +1,79 @@
+.debt-form-card {
+  background: white;
+  border: 0.5px solid rgba(26, 24, 20, 0.12);
+  padding: 2.5rem;
+  width: 100%;
+}
+
+.debt-form-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.debt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.field-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.field label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(26, 24, 20, 0.6);
+}
+
+.field input,
+.field select {
+  padding: 0.75rem 1rem;
+  border: 0.5px solid rgba(26, 24, 20, 0.2);
+  background: #fafaf7;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #1a1814;
+  transition: border-color 0.2s ease;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-color: #a08552;
+  background: white;
+}
+
+.field input::placeholder {
+  color: rgba(26, 24, 20, 0.3);
+}
+
+.debt-form-submit {
+  margin-top: 0.5rem;
+  padding: 1rem 2rem;
+  background: #1a1814;
+  color: #f4f1ea;
+  border: 0.5px solid #1a1814;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.debt-form-submit:hover {
+  background: transparent;
+  color: #1a1814;
+}
