@@ -114,3 +114,21 @@ body {
 .debt-list-wrapper {
   width: 100%;
 }
+
+.error-banner {
+  background: #fef5f5;
+  border: 0.5px solid rgba(180, 50, 50, 0.4);
+  color: #a8413a;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.loading-state {
+  background: white;
+  border: 0.5px solid rgba(26, 24, 20, 0.12);
+  padding: 3rem;
+  text-align: center;
+  color: rgba(26, 24, 20, 0.6);
+  font-size: 1rem;
+}

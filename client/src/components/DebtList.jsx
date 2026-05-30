@@ -53,7 +53,7 @@ function DebtList({ debts, onDelete }) {
 
       <ul className="debt-list-rows">
         {debts.map((debt) => (
-          <li key={debt.id} className="debt-row">
+          <li key={debt._id} className="debt-row">
             <div className="debt-row-main">
               <p className="debt-creditor">{debt.creditor}</p>
               <p className={`debt-status ${statusTone(debt.status)}`}>
@@ -86,7 +86,7 @@ function DebtList({ debts, onDelete }) {
 
             <button
               className="debt-delete"
-              onClick={() => onDelete(debt.id)}
+              onClick={() => onDelete(debt._id)}
               aria-label={`Delete ${debt.creditor}`}
             >
               ✕
